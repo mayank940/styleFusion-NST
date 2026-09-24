@@ -123,6 +123,3 @@ def index():
             error = "Style image not uploaded"
 
     return render_template("index.html",form=form, result_image=result_image, error=error)
-
-if __name__ == "__main__":
-    run_simple("0.0.0.0", 5000, app, use_reloader = True, use_debugger=True)
