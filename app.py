@@ -52,7 +52,7 @@ def style_transfer(content_image, style_image, alpha):
     alpha = alpha / 100
 
     image_transform = transforms.Compose([
-        transforms.Resize(512),
+        transforms.Resize(256),
         transforms.ToTensor()
     ])
 
